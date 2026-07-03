@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yönetim Paneli — B11 Market</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">B11</span>
+      <span class="logo-word">Market</span>
+    </a>
+    <a class="btn btn-ghost" href="index.html">← Siteye dön</a>
+  </div>
+</header>
+
+<main class="wrap admin-wrap">
+
+  <!-- LOGIN -->
+  <section id="loginScreen" class="login-card">
+    <p class="eyebrow">Yönetim Paneli</p>
+    <h1>Giriş yap</h1>
+    <p class="login-hint">Kategori görsellerini değiştirmek için admin şifresini gir.</p>
+    <form id="loginForm" class="login-form">
+      <input type="password" id="passwordInput" placeholder="Şifre" autocomplete="current-password" required>
+      <button type="submit" class="btn btn-primary">Giriş yap</button>
+    </form>
+    <p id="loginError" class="login-error" hidden>Şifre hatalı, tekrar dene.</p>
+  </section>
+
+  <!-- PANEL -->
+  <section id="panelScreen" class="panel" hidden>
+    <div class="panel-head">
+      <div>
+        <p class="eyebrow">Yönetim Paneli</p>
+        <h1>Kategori görselleri</h1>
+        <p class="login-hint">Her kartın altındaki "Görsel değiştir" ile yeni fotoğraf yükleyebilirsin. Değişiklikler bu tarayıcıda otomatik kaydedilir.</p>
+      </div>
+      <button id="logoutBtn" class="btn btn-outline">Çıkış yap</button>
+    </div>
+
+    <div class="admin-grid" id="adminGrid">
+      <!-- JS ile doldurulur -->
+    </div>
+  </section>
+
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
